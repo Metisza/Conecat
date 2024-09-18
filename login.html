@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <nav class="return">
+        <a href="index.html">
+            <img src="images/botao-de-seta-curva-para-a-esquerda.png">
+        </a>
+    </nav>
+
+    <article class="sizze">
+        <h1 class="titlle">Fazer Login</h1>
+
+        <form id="forml" action="/action_page.php" target="_blank" method="get">
+            <fieldset class="dados">
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" value="" autocomplete="on" placeholder="Email completo" autofocus
+                    required />
+
+
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" min="8" max="10" maxlength="10" autocomplete="off"
+                    placeholder="Senha minima de 8 digitos" required />
+                    <a href="newpassword.html" class="link">Esqueci minha senha</a>
+
+                    <img src="images/conectar.png" alt="tomada" class="conectar">
+                    
+
+                <input type="submit" class="btn" value="Enviar">
+                <input type="reset" class="btn" value="Apagar">
+
+                
+            </fieldset>
+        </form>
+    </article>
+</body>
+
+</html>
