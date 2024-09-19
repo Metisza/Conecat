@@ -1,7 +1,10 @@
 body {
     font-size: 62.5%;
-    position: relative;
     display: flex;
+    flex-direction:row ;
+    gap: 30%;
+    width: auto;
+    height: 100vh;
 }
 
 body::before {
@@ -16,13 +19,9 @@ body::before {
 }
 
 .return {
-    display: absolute;
-    justify-content: left;
     width: 5em;
-    height: 5.0em;
-    margin-left: 2em;
-    cursor: pointer;
-    border-radius: 100em;
+    height: 5em;
+    border-radius: 50%;
 }
 
 .return img {
@@ -31,58 +30,62 @@ body::before {
 }
 
 .sizze {
-    display: block;
-    align-items: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 50em;
-    height: 70em;
+    height: 100vh;
     padding: 0;
-    margin-left: 40em;
+    margin:0;
     background-color: rgb(160, 159, 159);
     border-radius: 5em;
-    position: relative;
 }
 
 .titlle {
-    display: flex;
-    justify-content: center;
     font-size: 7em;
     font-family: "Poiret One", sans-serif;
     text-transform: uppercase;
+    margin-bottom: 0;
+    padding: 0;
 }
 
 #forml {
     font-family: "Poiret One", sans-serif;
     font-weight: 600;
     font-size: 2em;
+    margin:0;
     padding: 0;
-    margin: 0;
-    outline: none;
-}
-
-#forml fieldset {
-    margin: 1.5em;
-    padding: 0;
-    text-align: left;
-    border: none;
-    opacity: 0.85;
+    width: 100%;
 }
 
 .dados {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 0.8em;
     text-transform: uppercase;
     font-weight: 1000;
+    margin: 2em;
+    opacity: 0.85;
+    gap: 1em;
+    border: none;
+    opacity: 0.85;
+    text-align: left;
 }
-
+ 
 .dados input,
 select {
     border-radius: 5em;
     border-color: rgb(197, 197, 197);
-    padding: 1em;
+    padding: 0.6em;
+    width: 100%;
 }
 
+.conect-bg {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+}
 :focus {
     background-color: rgb(53, 53, 53);
     color: aliceblue;
@@ -90,19 +93,18 @@ select {
 
 .link {
     font-size: 0.65em;
-    justify-content: right;
-    display: flex;
     padding: 0;
-    margin-bottom: 8em;
+    margin:0;
+    text-align: right;
 
 }
 
 .conectar {
-    position: absolute;
-    top: 21em;
-    left: 10em;
-    width: 4em;
-    height: 4em;
+    display: flex;
+    justify-content: center;
+    height: 5em;
+    width: 5em;
+    padding: 0;
 }
 
 input:hover {
