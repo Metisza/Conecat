@@ -38,7 +38,7 @@ body::before {
 /* Centralizando o artigo .sizze no centro da página */
 .sizze {
     padding: 2em;
-    width: 60em;
+    width: 50em;
     background-color: rgb(160, 159, 159);
     border-radius: 4em;
     text-align: center;
@@ -126,7 +126,7 @@ input:hover {
 
 @media (max-width: 1024px) {
     .sizze {
-        width: 50em;
+        width: 40em;
     }
 
     .dados {
